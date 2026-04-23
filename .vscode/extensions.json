@@ -1,10 +1,8 @@
 {
   "recommendations": [
     // Themes & Icons
-    "antfu.theme-vitesse",
     "catppuccin.catppuccin-vsc",
     "catppuccin.catppuccin-vsc-icons",
-    "antfu.icons-carbon",
 
     // Editor
     "aaron-bond.better-comments",
