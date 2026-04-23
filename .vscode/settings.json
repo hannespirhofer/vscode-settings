@@ -39,7 +39,7 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "files.eol": "\n",
-  "files.insertFinalNewline": true,
+  "files.insertFinalNewline": false, // use it as UNIX standard, disable for tt-repos
   "files.simpleDialog.enable": true,
   "git.autofetch": true,
   "git.confirmSync": false,
