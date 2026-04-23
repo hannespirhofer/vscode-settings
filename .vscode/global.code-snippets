@@ -1,93 +1,117 @@
 {
-  "import": {
-    "scope": "javascript,typescript",
-    "prefix": "im",
+  // ==================== LOGGING ====================
+  "Console Log": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "conlog",
+    "body": ["console.log(\"$1: \", $1);"],
+    "description": "Console.log with label"
+  },
+
+  // ==================== FUNCTIONS ====================
+  "Arrow Function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "fnarrow",
+    "body": ["const $1 = () => {", "\t$0", "}"],
+    "description": "Arrow Function"
+  },
+  "Default Function": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "fndefault",
+    "body": ["function $1() {", "\t$0", "}"],
+    "description": "Default Function"
+  },
+
+  // ==================== REACT ====================
+  "useEffect Mount": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "uem",
+    "body": ["useEffect(() => {", "\t$0", "}, [])"],
+    "description": "useEffect - runs once on mount"
+  },
+  "useEffect Deps": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ued",
+    "body": ["useEffect(() => {", "\t$0", "}, [$1])"],
+    "description": "useEffect - with dependencies"
+  },
+  "useState": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "ust",
+    "body": ["const [$1, set$2] = useState($0)"],
+    "description": "useState hook"
+  },
+
+  // ==================== REGIONS ====================
+  "Region Large": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "regionl",
     "body": [
-      "import { $1 } from '$2';"
+      "//#region //! ---- $0 ----",
+      "\t",
+      "//#endregion"
     ],
-    "description": "Import a module"
+    "description": "Large Region"
   },
-  "export-all": {
-    "scope": "javascript,typescript",
-    "prefix": "ex",
+  "Region Small": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "region",
+    "body": ["//#region //! $0", "\t", "//#endregion"],
+    "description": "Small Region"
+  },
+  "CSS Region Large": {
+    "scope": "css,scss,sass",
+    "prefix": "regionl",
     "body": [
-      "export * from '$2';"
+      "/* #region ---- $0 ---- */",
+      "\t",
+      "/* #endregion ---- $0 ---- */"
     ],
-    "description": "Export a module"
+    "description": "Large CSS Region"
   },
-  "vue-script-setup": {
-    "scope": "vue",
-    "prefix": "<sc",
-    "body": [
-      "<script setup lang=\"ts\">",
-      "const props = defineProps<{",
-      "  modelValue?: boolean,",
-      "}>()",
-      "$1",
-      "</script>",
-      "",
-      "<template>",
-      "  <div>",
-      "    <slot/>",
-      "  </div>",
-      "</template>",
-    ]
+  "CSS Region Small": {
+    "scope": "css,scss,sass",
+    "prefix": "region",
+    "body": ["/* #region $0 */", "\t", "/* #endregion $0 */"],
+    "description": "Small CSS Region"
   },
-  "vue-template-ref": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "tref",
-    "body": [
-      "const ${1:el} = shallowRef<HTMLDivElement>()",
-    ]
+
+  // ==================== CSS MEDIA QUERIES ====================
+  "Media XSmall": {
+    "scope": "css,scss,sass",
+    "prefix": "bp-xs",
+    "body": ["/* Extra Small - max 575px */", "@media (max-width: 575px) {", "\t$0", "}"],
+    "description": "Media Query Extra Small"
   },
-  "vue-computed": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "com",
-    "body": [
-      "computed(() => { $1 })"
-    ]
+  "Media Small": {
+    "scope": "css,scss,sass",
+    "prefix": "bp-sm",
+    "body": ["/* Small - max 576px */", "@media screen and (max-width: 576px) {", "\t$0", "}"],
+    "description": "Media Query Small"
   },
-  "vue-watch-effect": {
-    "scope": "javascript,typescript,vue",
-    "prefix": "watchE",
-    "body": [
-      "watchEffect(() => {",
-      "  $1",
-      "})"
-    ]
+  "Media Medium": {
+    "scope": "css,scss,sass",
+    "prefix": "bp-md",
+    "body": ["/* Medium - max 768px */", "@media screen and (max-width: 768px) {", "\t$0", "}"],
+    "description": "Media Query Medium"
   },
-  "if-vitest": {
-    "scope": "javascript,typescript",
-    "prefix": "ifv",
-    "body": [
-      "if (import.meta.vitest) {",
-      "  const { describe, it, expect } = import.meta.vitest",
-      "  ${1}",
-      "}"
-    ]
+  "Media Large": {
+    "scope": "css,scss,sass",
+    "prefix": "bp-lg",
+    "body": ["/* Large - max 1024px */", "@media screen and (max-width: 1024px) {", "\t$0", "}"],
+    "description": "Media Query Large"
   },
-  "markdown-api-table": {
-    "scope": "markdown",
-    "prefix": "table",
-    "body": [
-      "<table>",
-      "<tr>",
-      "<td width=\"400px\" valign=\"top\">",
-      "",
-      "### API",
-      "",
-      "Description",
-      "",
-      "</td>",
-      "<td width=\"600px\"><br>",
-      "",
-      "```ts",
-      "// code block",
-      "```",
-      "",
-      "</td>",
-      "</tr>",
-      "</table>",
-    ],
+  "Media XLarge": {
+    "scope": "css,scss,sass",
+    "prefix": "bp-xl",
+    "body": ["/* Extra Large - max 1440px */", "@media screen and (max-width: 1440px) {", "\t$0", "}"],
+    "description": "Media Query Extra Large"
+  },
+
+  // ==================== PHP / TYPO3 ====================
+  "TYPO3 Debug": {
+    "scope": "php",
+    "prefix": "t3debug",
+    "body": ["\\TYPO3\\CMS\\Extbase\\Utility\\DebuggerUtility::var_dump($1);"],
+    "description": "TYPO3 Debug Helper"
   }
 }
