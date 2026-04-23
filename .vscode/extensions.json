@@ -1,38 +1,50 @@
 {
   "recommendations": [
-    // my extensions, ofc :P
-    "antfu.browse-lite",
-    "antfu.iconify",
-    "antfu.slidev",
-    "antfu.unocss",
-    "antfu.vite",
-    "antfu.where-am-i",
-    "antfu.open-in-github-button",
-    "lokalise.i18n-ally",
-
-    // themes & icons
-    "antfu.icons-carbon",
+    // Themes & Icons
     "antfu.theme-vitesse",
-    "file-icons.file-icons",
-    "sainnhe.gruvbox-material",
-    "Catppuccin.catppuccin-vsc-icons",
+    "catppuccin.catppuccin-vsc",
+    "catppuccin.catppuccin-vsc-icons",
+    "antfu.icons-carbon",
 
-    // life savers!
-    "dbaeumer.vscode-eslint",
-    "Vue.volar",
-    "GitHub.copilot",
-    "usernamehw.errorlens",
+    // Editor
+    "aaron-bond.better-comments",
+    "shardulm94.trailing-spaces",
     "streetsidesoftware.code-spell-checker",
-
-    // up to you
     "eamodio.gitlens",
-    "EditorConfig.EditorConfig",
-    "github.vscode-github-actions",
-    "GitHub.vscode-pull-request-github",
-    "johnsoncodehk.vscode-tsconfig-helper",
-    "mpontus.tab-cycle",
-    "naumovs.color-highlight",
-    "WakaTime.vscode-wakatime",
-    "znck.grammarly"
+    "alefragnani.project-manager",
+
+    // Formatter
+    "esbenp.prettier-vscode",
+    "mrmlnc.vscode-autoprefixer",
+
+    // JavaScript / React
+    "dsznajder.es7-react-js-snippets",
+
+    // PHP
+    "bmewburn.vscode-intelephense-client",
+
+    // Python
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "ms-python.black-formatter",
+
+    // TYPO3
+    "benjaminkott.typo3-typoscript",
+    "febley.typo3-fluid-snippets",
+    "leon-wbr.vscode-typo3-fluid",
+    "ralffreit.typo3snippets",
+
+    // CSS / HTML
+    "glenn2223.live-sass",
+    "ecmel.vscode-html-css",
+    "redhat.vscode-xml",
+
+    // Tools
+    "anthropic.claude-code",
+    "ms-vscode-remote.remote-containers",
+    "natizyskunk.sftp",
+    "ritwickdey.liveserver",
+    "moritzpruenster.nl-compiler"
   ]
 }
