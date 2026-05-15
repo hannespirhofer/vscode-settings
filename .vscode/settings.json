@@ -9,12 +9,12 @@
   "workbench.colorTheme": "Vitesse Dark",
   "workbench.editor.tabActionLocation": "right",
   "workbench.fontAliasing": "antialiased",
-  "workbench.iconTheme": "catppuccin-frappe",
+  "workbench.iconTheme": "catppuccin-latte",
   "workbench.list.smoothScrolling": true,
   "workbench.preferredDarkColorTheme": "Vitesse Dark",
-  "workbench.preferredLightColorTheme": "Catppuccin Macchiato",
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
   "workbench.productIconTheme": "Default",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.expandMode": "singleClick",
   "workbench.tree.indent": 10,
@@ -25,12 +25,14 @@
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.inlineSuggest.enabled": true,
+  "editor.inlayHints.enabled": "off",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.stickyScroll.enabled": true,
-  "editor.hover.sticky": true,
+  "editor.hover.enabled": "on",
+  "editor.hover.sticky": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.fixAll.eslint": "explicit",
@@ -74,7 +76,6 @@
     "**/out/**": true,
     "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
-    "**/public": true,
     "**/temp": true,
     "**/yarn.lock": true,
     "**/CHANGELOG*": true,
@@ -90,6 +91,7 @@
 
   // ========== Extension configs ========== 
   "emmet.showSuggestionsAsSnippets": true,
+  "editor.snippetSuggestions": "inline",
   "emmet.triggerExpansionOnTab": false,
   // "errorLens.enabledDiagnosticLevels": [
   //   "warning",
@@ -136,13 +138,13 @@
   // ],
 
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "markdown": true,
     "plaintext": false,
   },
-  "cSpell.allowCompoundWords": true,
-  "cSpell.language": "en,en-US",
-  "css.lint.hexColorLength": "ignore",
+  // "cSpell.allowCompoundWords": true,
+  // "cSpell.language": "en,en-US",
+  // "css.lint.hexColorLength": "ignore",
   // "githubIssues.workingIssueFormatScm": "#${issueNumberLabel}",
   // "githubPullRequests.fileListLayout": "tree",
   "gitlens.codeLens.authors.enabled": false,
@@ -205,6 +207,31 @@
   "prettier.singleQuote": true,
 
   "json.schemaDownload.enable": true,
+  "cSpell.userWords": [
+    "jquery"
+  ],
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": "C:\\WINDOWS\\System32\\cmd.exe",
+      "args": []
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "python.terminal.activateEnvironment": false,
+  "explorer.copyPathSeparator": "/",
+  "explorer.copyRelativePathSeparator": "/",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
 
   // ========== File Nesting ==========
   // this might not be up to date with the repo, please check yourself
