@@ -13,7 +13,6 @@ catppuccin.catppuccin-vsc
 catppuccin.catppuccin-vsc-icons
 aaron-bond.better-comments
 shardulm94.trailing-spaces
-streetsidesoftware.code-spell-checker
 eamodio.gitlens
 alefragnani.project-manager
 esbenp.prettier-vscode
@@ -27,7 +26,6 @@ ms-python.black-formatter
 benjaminkott.typo3-typoscript
 febley.typo3-fluid-snippets
 leon-wbr.vscode-typo3-fluid
-ralffreit.typo3snippets
 glenn2223.live-sass
 ecmel.vscode-html-css
 redhat.vscode-xml
